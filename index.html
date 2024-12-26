@@ -15,33 +15,33 @@
     
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
-  <body>
-    <header class="header-main">
-      <nav class="main-nav">
-        <ul class="nav-ul">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Resume</a></li>
-          <li><a href="/">Work</a></li>
-          <li><a href="/">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <body> 
     <div class="container">
+      <header class="header-main">
+        <nav class="main-nav">
+          <ul class="nav-ul">
+            <li><a class="active" href="#"><i class="bi bi-emoji-smile"></i><br />Home</a></li>
+            <li><a href="#"><i class="bi bi-file-text"></i><br />Resume</a></li>
+            <li><a href="#"><i class="bi bi-pc-display"></i><br />Work</a></li>
+            <li><a href="#"><i class="bi bi-send"></i><br />Contact</a></li>
+          </ul>
+        </nav>
+      </header>
       <div class="d-flex wrapper-box">
         <aside class="aside-section">
           <figure class="arun-img">
             <img src="./assets/images/Arun.jpg" />
           </figure>
           <h1 class="arun-name">
-            <a href="/">Arun <span class="name-title">Mishra</span></a>
+            <a href="#">Arun <span class="name-title">Mishra</span></a>
           </h1>
           <h2>FullStack Developer</h2>
 
           <section class="social-connect">
             <ul class="social-connect-list">
-              <li><a href="" class="fb-link" aria-label="facebook"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="" class="in-link" aria-label="linked in"><i class="bi bi-linkedin"></i></a></li>
-              <li><a href="" class="git-link" aria-label="git"><i class="bi bi-git"></i></a></li>
+              <li><a href="#" class="fb-link" aria-label="facebook"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#" class="in-link" aria-label="linked in"><i class="bi bi-linkedin"></i></a></li>
+              <li><a href="#" class="git-link" aria-label="git"><i class="bi bi-git"></i></a></li>
             </ul>
           </section>
           <address class="my-details">
@@ -73,7 +73,9 @@
                   </div>
                 </div>
               </li>
-              <li class="me-cta"></li>
+              <li class="me-cta">
+                <button class="btn btn-primary me-cta-btn" type="button" value="Download Resume">Download Resume</button>
+              </li>
             </ul>
           </address>
         </aside>

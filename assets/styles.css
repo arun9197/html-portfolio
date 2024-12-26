@@ -7,6 +7,8 @@
 :root{
     --tertiory-color: #EC1B09;
     --seconday-color: #FF9C1B;
+    --menu-color: #F2F7FC;
+    --menu-item-color: #E1E8EF;
     --primary-color: #F2F5F9;
 }
 /**colr varriable**/
@@ -37,12 +39,51 @@ p{
   font-size: 16px;  
   font-weight: 500;
 }
-.header-main{}
+.header-main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 73px;
+}
 .main-nav{}
-.nav-ul{}
+.nav-ul{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 40px;
+    background: var(--menu-color);
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 0px #0000002b;
+}
 .nav-ul li{}
-.nav-ul li a{}
-
+.nav-ul li a{
+    display: block;
+    padding: 20px 16px;
+    background: var(--menu-item-color);
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.nav-ul li a.active, .nav-ul li a:hover{
+    color:#fff;
+    background: -moz-linear-gradient(90deg, var(--seconday-color) 0%, var(--tertiory-color) 100%);
+    background: -webkit-linear-gradient(90deg, var(--seconday-color) 0%, var(--tertiory-color) 100%);
+    background: linear-gradient(90deg, var(--seconday-color) 0%, var(--tertiory-color) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--seconday-color)",endColorstr="var(--tertiory-color)",GradientType=1);
+}
+.nav-ul li a i{
+    font-size: 22px;
+    opacity: 50%;
+}
+.nav-ul li a.active i, .nav-ul li a:hover i{
+    opacity: 100%;
+}
 
 .wrapper-box{
     gap:20px;
@@ -113,7 +154,21 @@ p{
 .fb-link .fa{}
 .in-link .fa{}
 .git-link .fa{}
-
+.address-detail-list .me-cta{
+    border-bottom: none;
+    text-align: center;
+}
+.me-cta-btn{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border:none;
+    font-size: 12px;
+    font-weight: 500; 
+    background: -moz-linear-gradient(90deg, var(--seconday-color) 0%, var(--tertiory-color) 100%);
+    background: -webkit-linear-gradient(90deg, var(--seconday-color) 0%, var(--tertiory-color) 100%);
+    background: linear-gradient(90deg, var(--seconday-color) 0%, var(--tertiory-color) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--seconday-color)",endColorstr="var(--tertiory-color)",GradientType=1);
+}
 
 .my-details{
     border-radius: 10px;
@@ -134,19 +189,30 @@ p{
     text-align: center;
     line-height: 44px;
 }
+.address-icon i{
+    font-size: 22px;
+    background: var(--seconday-color);
+    background: -moz-linear-gradient(180deg, var(--seconday-color) 0%, var(--tertiory-color) 100%);
+    background: -webkit-linear-gradient(180deg, var(--seconday-color) 0%, var(--tertiory-color) 100%);
+    background: linear-gradient(180deg, var(--seconday-color) 0%, var(--tertiory-color) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--seconday-color)",endColorstr="var(--tertiory-color)",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .address-info{
     line-height: 21px;
 }
-.address-info p, .address-info a{
+.address-info p, .address-info a, .address-info span{
     font-size: 14px;
     font-weight: 600;
     color: #000;
     opacity: 50%;
     margin: 0;
 }
-.address-info a{
+.address-info a, .address-info span{
     color: #000;
     opacity: 100%;
+    text-decoration: none;
 }
 
 .main-content{
