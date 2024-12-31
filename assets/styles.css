@@ -30,14 +30,16 @@ h2,h3,h4,h5,h6{
 h2{
     font-size: 32px;
     font-weight: 500;
+    margin-bottom: 18px;
 }
 h3{
     font-size: 24px;
     font-weight: 600;
 }
 p{
-  font-size: 16px;  
+  font-size: 14px;  
   font-weight: 500;
+  margin-bottom: 18px;
 }
 .header-main{
     position: relative;
@@ -50,6 +52,7 @@ p{
 .nav-ul{
     margin-bottom: 10px;
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     background: var(--menu-color);
     padding: 10px 30px;
@@ -106,8 +109,8 @@ p{
 .arun-img{
     width: 200px;
     position: absolute;
-    transform: translate(-50%, 0);
-    top: -87px;
+    transform: translate(-50%, 0); 
+    top: 20px;
     left: 50%;
 }
 .arun-img img{
@@ -115,8 +118,8 @@ p{
     height: 200px;
     border-radius: 20px;
 }
-.arun-name{
-    margin-top: 6rem;
+.arun-name{ 
+    margin-top: 206px;
     text-align: center;
     font-family: "Raleway", serif;
     font-weight: bold;
@@ -227,7 +230,7 @@ p{
     gap:27px;
 }
 .colored-block{
-    width: 47%;
+    width: 100%;
     padding: 13px 25px;
     background: #F2F7FC;
     border-radius: 10px;
@@ -242,6 +245,11 @@ p{
 }
 
 /**Media query**/
+@media only screen and (min-width: 541px){
+    .colored-block{
+        width: 47%;
+    }
+}
 @media only screen and (min-width: 1023px){
     .aside-section {
         width: 33.33%;
@@ -251,5 +259,15 @@ p{
     }
     .wrapper-box{
         flex-direction: row;
+    }
+
+    .arun-img{ 
+        top: -87px; 
+    } 
+    .arun-name{
+        margin-top: 6rem; 
+    }
+    .nav-ul{
+        flex-wrap: nowrap;
     }
 }
